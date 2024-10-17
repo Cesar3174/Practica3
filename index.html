@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h2 style="font-family:Sixtyfour Convergence, sans-serif; font-optical-sizing: auto; font-weight: 400; font-style: normal;">Cambios en la F1</h2>
+
+        <p style="font-style: normal; width: 60%;">
+            Los autos de Fórmula 1 tienen su origen en la década de 1950, cuando se estableció el campeonato mundial de F1 en 1950. 
+            Los primeros autos de carreras eran adaptaciones de vehículos de carretera con motores delanteros. 
+            Sin embargo, a partir de los años 60´s, se introdujo el diseño de motor central para mejorar el equilibrio y la distribución del peso. 
+            Esto fue una gran innovación que revolucionó la forma en que se construían los autos de carreras, siendo pioneros en esta configuración 
+            los autos de la marca Cooper. En las décadas siguientes, los autos de F1 han evolucionado significativamente, con la adición de 
+            aerodinámica avanzada, materiales ligeros como la fibra de carbono, y tecnologías híbridas modernas. Desde los años 80, la fibra de carbono 
+            se convirtió en el material estándar para el chasis, mejorando la resistencia y reduciendo el peso. Actualmente, los autos de F1 cuentan con 
+            sistemas híbridos que combinan motores de combustión interna con unidades de energía eléctrica, lo que los hace más eficientes. Además, 
+            las estrictas regulaciones han llevado a constantes modificaciones en la aerodinámica y la seguridad, como la introducción del Halo, 
+            un dispositivo de protección para la cabeza del piloto.
+        </p>
+
+        <button type="button" onclick="cambiarImagen()">
+            <img src="https://1000marcas.net/wp-content/uploads/2020/01/F1-Logo-tumb.jpg" height="300px">
+        </button>
+
+        <img id="demo" src="https://i.pinimg.com/originals/ca/ac/72/caac72b018fb2e2339dddd40f17f3148.jpg" height="300px">
+
+        <script>
+            function cambiarImagen() {
+                const img = document.getElementById('demo');
+                if (img.src.includes('https://i.pinimg.com/originals/ca/ac/72/caac72b018fb2e2339dddd40f17f3148.jpg')) {
+                    img.src = "https://cdn-5.motorsport.com/images/mgl/254B8MM0/s800/red-bull-racing-2022-f1-car-1.jpg";
+                } else {
+                    img.src = "https://i.pinimg.com/originals/ca/ac/72/caac72b018fb2e2339dddd40f17f3148.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
+
